@@ -28,7 +28,10 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
-
+var doSomethingCool = function() {
+  console.log("Something Cool");
+};
+console.log(doSomethingCool);
 
 // -----------------------------------------------
 
@@ -48,8 +51,11 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+var sayHi = function () {
+  alert("Hello, Jason");
+}
 
-
+setTimeout(sayHi, 2000)
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -78,7 +84,7 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+// [c] because x is a variable for the unknown. also its outside the timeout function. Right?
 
 // -----------------------------------------------
 
@@ -100,7 +106,10 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+var reverseStr = function(str) {
+  return str.split("").reverse().join("");
+};
+console.log(reverseStr("tcerroc"));
 
 // -----------------------------------------------
 
@@ -131,7 +140,7 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
-
+// got lost on this one.
 
 // -----------------------------------------------
 
@@ -148,7 +157,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
@@ -168,9 +178,13 @@ var callTenTimes = function(callback) {
   var range = _.range(10);
   _.each(range, callback);
 };
-
+console.log(callTenTimes);
 // Put your answer below -------------------------
-
+var callNtimes = function(callback) {
+  var range = _.range(x);
+  _.each(range, callback);
+};
+console.log(callNtimes);
 
 // -----------------------------------------------
 
@@ -198,7 +212,7 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
-
+// Honestly couldn't find this one
 
 // -----------------------------------------------
 
@@ -218,7 +232,14 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+var addNumbers = function(numberA, numberB) {
+  return (numberA + numberB);
+};
 
+var twoPlusTwo = addNumbers(2,2)
+console.log(twoPlusTwo);
+// I hope I'm right because I literally stared at this for 20
+// minutes before having my "lightbulb" moment.
 
 // -----------------------------------------------
 
@@ -244,7 +265,16 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+var speed = 0;
 
+var accelerate = function(amount) {
+  if(amount === 0) {
+    speed += 1;
+  }else {
+    speed += amount;
+  }
+};
+accelerate(5);
 
 // -----------------------------------------------
 
